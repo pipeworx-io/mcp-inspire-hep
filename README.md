@@ -1,19 +1,21 @@
-# mcp-inspire-hep
+# @pipeworx/inspire-hep
 
-INSPIRE-HEP MCP — high-energy physics literature.
+[INSPIRE-HEP](https://inspirehep.net) MCP — comprehensive high-energy physics literature database. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search` | Literature search. |
-| `literature` | Single literature record by INSPIRE record id. |
-| `authors_search` | Search authors. |
-| `author` | Author record by INSPIRE id. |
-| `institutions_search` | Search institutions. |
-| `conferences_search` | Search conferences. |
+- `search(query, sort?, size?, page?, fields?)` — literature search (Solr-style)
+- `literature(record_id)` — single paper by record id
+- `authors_search(query, size?)` — author search
+- `author(record_id)` — author record
+- `institutions_search(query, size?)` — institution search
+- `conferences_search(query, size?)` — conference search
+
+## Data source
+
+`https://inspirehep.net/api/`
 
 ## Quick Start
 
@@ -29,7 +31,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -53,7 +55,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
