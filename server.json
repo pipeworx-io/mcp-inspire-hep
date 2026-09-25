@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/inspire-hep",
   "title": "Inspire Hep",
-  "description": "INSPIRE-HEP high-energy physics literature database",
-  "version": "0.1.0",
+  "description": "INSPIRE-HEP MCP — high-energy physics literature.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/inspire-hep",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-inspire-hep",
