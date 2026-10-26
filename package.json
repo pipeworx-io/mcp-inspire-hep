@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-inspire-hep",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "INSPIRE-HEP MCP — high-energy physics literature.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d79b9ccbd352d7f99546045c0125dcd767e2aad434926eaa6deb36b1dd0632db",
-    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
+    "sourceHash": "v1-606ed96169d76d623028377d07dd025115f8a750be33686e00d7ec6a1c84ed13",
+    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
   }
 }
