@@ -1,0 +1,118 @@
+[
+  {
+    "name": "search",
+    "description": "Literature search.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Lucene/Solr query, e.g. \"title higgs AND author maldacena\"."
+        },
+        "sort": {
+          "type": "string",
+          "description": "mostrecent | mostcited (default mostrecent)"
+        },
+        "size": {
+          "type": "number",
+          "description": "1-250 (default 25)"
+        },
+        "page": {
+          "type": "number",
+          "description": "1-based (default 1)"
+        },
+        "fields": {
+          "type": "string",
+          "description": "Comma-sep list of fields to return."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "literature",
+    "description": "Single literature record by INSPIRE record id.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "record_id": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "record_id"
+      ]
+    }
+  },
+  {
+    "name": "authors_search",
+    "description": "INSPIRE-HEP, the high-energy-physics literature database — search its HEPNames author records with a Lucene/Solr query such as a surname or ORCID. Returns each author's INSPIRE record id, preferred and alternative name forms, institutional affiliations, ORCID and arXiv categories. Answers which particle physicist a name refers to in INSPIRE and what their author record id is.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "size": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "author",
+    "description": "Author record by INSPIRE id.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "record_id": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "record_id"
+      ]
+    }
+  },
+  {
+    "name": "institutions_search",
+    "description": "INSPIRE-HEP, the high-energy-physics literature database — search its institutions collection, the registry of physics laboratories, universities and research centres such as CERN, Fermilab and DESY. Takes a Lucene/Solr query and returns each institution's INSPIRE record id, ICN code, legal and display names, address and country. Answers what INSPIRE's record is for a physics laboratory or university.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "size": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "conferences_search",
+    "description": "INSPIRE-HEP, the high-energy-physics literature database — search its conferences collection of particle-physics meetings, workshops and schools. Takes a Lucene/Solr query and returns each event's INSPIRE record id, title and acronym, opening and closing dates, location, series and proceedings links. Answers when and where a physics conference is or was held.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string"
+        },
+        "size": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  }
+]
